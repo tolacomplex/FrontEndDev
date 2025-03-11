@@ -230,7 +230,7 @@ export default function IndexPage() {
           <div className="w-[700px] lg:relative lg:top-[100px] md:left-[50px]">
             <h1 className="lg:text-[40px] font-bold ">Benefite Of</h1>
             <h1 className="lg:text-[40px] text-success font-bold">Course</h1>
-            <p className="w-[400px] mt-10">{paragraph}</p>
+            <p className="w-[400px] mt-10 text-white">{paragraph}</p>
             <Button
               showAnchorIcon
               as={Link}
@@ -255,10 +255,10 @@ export default function IndexPage() {
             {/* No contents in this page */}
           </div>
           <div className="w-[700px] lg:relative lg:top-[100px] lg:left-[200px]">
-            <h1 className="text-[40px] font-bold text-warning">
+            <h1 className="lg:text-[40px] font-bold text-warning">
               Behind The strategy
             </h1>
-            <p className="w-[400px] mt-10">{strategy}</p>
+            <p className="w-[400px] mt-10 text-white">{strategy}</p>
             <Button
               showAnchorIcon
               as={Link}
@@ -272,6 +272,90 @@ export default function IndexPage() {
             </Button>
           </div>
         </div>
+      </section>
+      <section>
+        <footer className="my-10">
+          <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-row-1 gap-4 ml-[50px] mr-[50px]">
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <h3 className="text-[30px] font-bold my-5 capitalize no-underline">
+                  Partner
+                </h3>
+                <li>
+                  <a href="#">Google</a>
+                </li>
+                <li>
+                  <a href="#">Facebook</a>
+                </li>
+                <li>
+                  <a href="#">Amazone</a>
+                </li>
+                <li>
+                  <a href="#">Youtube</a>
+                </li>
+                <li>
+                  <a href="#">X</a>
+                </li>
+                <li>
+                  <a href="#">Freecodecamp</a>
+                </li>
+              </ul>
+            </div>
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <h3 className="text-[30px] font-bold my-5 capitalize no-underline">
+                  Course Popular
+                </h3>
+                <li>
+                  <a href="#">Python programming</a>
+                </li>
+                <li>
+                  <a href="#">Javascript programming</a>
+                </li>
+                <li>
+                  <a href="#">Java programming</a>
+                </li>
+                <li>
+                  <a href="#">Mobile Application</a>
+                </li>
+                <li>
+                  <a href="#">Javascript Development</a>
+                </li>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+              </ul>
+            </div>
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <div>
+                  <h3 className="text-[30px] font-bold my-5 capitalize">
+                    Goal Together
+                  </h3>
+                </div>
+                <li>
+                  <a href="#">Develope Artificial Intelligent</a>
+                </li>
+                <li>
+                  <a href="#">Community Developes</a>
+                </li>
+                <li>
+                  <a href="#">Campanies Partner</a>
+                </li>
+                <li>
+                  <a href="#">Learning Resources</a>
+                </li>
+                <li>
+                  <a href="#">Blog Technologies</a>
+                </li>
+                <li>
+                  <a href="#">Safety and security</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <hr />
       </section>
     </DefaultLayout>
   );

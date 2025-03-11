@@ -3,7 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import { Avatar } from "@heroui/avatar";
 import { Autocomplete, AutocompleteItem } from "@heroui/autocomplete";
-import {Button} from "@heroui/button";
+import { Button } from "@heroui/button";
 import { Alert } from "@heroui/alert";
 import React from "react";
 
@@ -269,13 +269,118 @@ export default function DocsPage() {
         ))}
       </div>
       <div className="flex flex-row gap-10 ml-20">
-        <Button isLoading color="default" variant="bordered">Hello UI</Button>
-        <Button color="primary" variant="shadow">Hello UI</Button>
-        <Button color="secondary" variant="flat">Hello UI</Button>
-        <Button color="success" variant="light" className="bg-gradient-to-tr from-sky-400 to-fuchsia-500">Hello UI</Button>
-        <Button color="warning" variant="solid">Hello UI</Button>
-        <Button color="danger" variant="ghost" className="bg-gradient-to-br from-pink-500 to-emerald-500 text-white" radius="full">Hello UI</Button>
+        <Button isLoading color="default" variant="bordered">
+          Hello UI
+        </Button>
+        <Button color="primary" variant="shadow">
+          Hello UI
+        </Button>
+        <Button color="secondary" variant="flat">
+          Hello UI
+        </Button>
+        <Button
+          color="success"
+          variant="light"
+          className="bg-gradient-to-tr from-sky-400 to-fuchsia-500"
+        >
+          Hello UI
+        </Button>
+        <Button color="warning" variant="solid">
+          Hello UI
+        </Button>
+        <Button
+          color="danger"
+          variant="ghost"
+          className="bg-gradient-to-br from-pink-500 to-emerald-500 text-white"
+          radius="full"
+        >
+          Hello UI
+        </Button>
       </div>
+      <section>
+        <footer className="my-10">
+          <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-row-1 gap-4 ml-[50px] mr-[50px]">
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <h3 className="text-[30px] font-bold my-5 capitalize no-underline">
+                  Partner
+                </h3>
+                <li>
+                  <a href="#">Google</a>
+                </li>
+                <li>
+                  <a href="#">Facebook</a>
+                </li>
+                <li>
+                  <a href="#">Amazone</a>
+                </li>
+                <li>
+                  <a href="#">Youtube</a>
+                </li>
+                <li>
+                  <a href="#">X</a>
+                </li>
+                <li>
+                  <a href="#">Freecodecamp</a>
+                </li>
+              </ul>
+            </div>
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <h3 className="text-[30px] font-bold my-5 capitalize no-underline">
+                  Course Popular
+                </h3>
+                <li>
+                  <a href="#">Python programming</a>
+                </li>
+                <li>
+                  <a href="#">Javascript programming</a>
+                </li>
+                <li>
+                  <a href="#">Java programming</a>
+                </li>
+                <li>
+                  <a href="#">Mobile Application</a>
+                </li>
+                <li>
+                  <a href="#">Javascript Development</a>
+                </li>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+              </ul>
+            </div>
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <div>
+                  <h3 className="text-[30px] font-bold my-5 capitalize">
+                    Goal Together
+                  </h3>
+                </div>
+                <li>
+                  <a href="#">Develope Artificial Intelligent</a>
+                </li>
+                <li>
+                  <a href="#">Community Developes</a>
+                </li>
+                <li>
+                  <a href="#">Campanies Partner</a>
+                </li>
+                <li>
+                  <a href="#">Learning Resources</a>
+                </li>
+                <li>
+                  <a href="#">Blog Technologies</a>
+                </li>
+                <li>
+                  <a href="#">Safety and security</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <hr />
+      </section>
     </DefaultLayout>
   );
 }
