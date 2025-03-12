@@ -6,6 +6,8 @@ import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { Image } from "@heroui/image";
+// svg icon card shopping
+//  for button buys
 export const BuysIcon = ({
   fill = "currentColor",
   size,
@@ -37,6 +39,8 @@ export const BuysIcon = ({
     </svg>
   );
 };
+// main page whole of page 
+// incluce all of page 
 export default function DocsPage() {
   const [value, setValue] = React.useState(0);
   React.useEffect(() => {
@@ -45,6 +49,9 @@ export default function DocsPage() {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+  const beginner: number = 14.99;
+  const advance: number = 19.99;
+  const master: number = 49.99;
   const speed_text: string =
     "The speed with which data is getting transmitted in computer is called data transmission speed. It is commonly measured in bits per second. To be more specific, it is measured in megabits (million bits) per second which is usually abbreviated as Mbps";
   return (
@@ -100,7 +107,7 @@ export default function DocsPage() {
       <section>
         <div>
           <h1 className="text-success text-center text-[40px] font-black capitalize my-10">
-            Try Your course:
+            Try beginner course:
           </h1>
         </div>
       </section>
@@ -114,14 +121,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="computer-science.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
                   <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       variant="light"
@@ -145,14 +152,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="python.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200</small>
+                  <h1>Python</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -175,14 +182,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="c_program.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>C Programming</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -205,14 +212,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="c-pp.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>C++ Programming</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -235,14 +242,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="cs.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>C# Programming</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -265,14 +272,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="java.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>Java Programming</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -295,14 +302,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="javascript.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>Javascript</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -325,14 +332,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="react.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>React</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -355,14 +362,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="html.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>HTML</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -385,14 +392,14 @@ export default function DocsPage() {
                 <Image
                   alt="Card background"
                   className="object-cover rounded-xl"
-                  src="https://heroui.com/images/hero-card-complete.jpeg"
+                  src="css.jpeg"
                   width={250}
                 />
               </CardBody>
               <CardFooter>
                 <div>
-                  <h1>Computer Science</h1>
-                  <small className="text-default-500">Price: $200.00</small>
+                  <h1>CSS</h1>
+                  <small className="text-default-500">Price: ${beginner}</small>
                   <div className="mt-2">
                     <Button
                       size="sm"
@@ -410,6 +417,548 @@ export default function DocsPage() {
             </Card>
           </div>
         </div>
+      </section>
+      {/* Advance course display out put user interface */}
+      {/* Page advance course*/}
+      {/* Page require user that had studied beginner courses below */}
+      <section>
+        <div className="text-center text-[40px] font-black my-10 text-secondary">
+          <h1>Advance Courses: </h1>
+        </div>
+      </section>
+      {/* Try your advance course of user choice */}
+      <section className="my-10">
+        <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-2 sm:grid sm:grid-1 gap-2">
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="ai-py.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">AI with Python</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card frontend developer tool */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="frontend.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Front end develpment</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card page back end development tool */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="backend.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Back end development</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card page react js development */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="react.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">React js</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card Full Stuck development application */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="fullstuck.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Full stuck development</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/*Card  Data science page development*/}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="data-science.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Date science</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card page machine learning development */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="machine-learning.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">machine learning</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card page mobile development */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="mobile.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Mobile Development</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card desktop application development */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="desktop.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">desktop application</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* Card ethicle hacking page development*/}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="hacking.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Ethicle hacking</h1>
+                  <small className="text-default-500">Price: ${advance}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      </section>
+      {/* Master course display out put user interface */}
+      {/* Page master course*/}
+      {/* Page require user that had studied some of advance courses and beginner courses below */}
+      <section>
+        <div className="text-center text-[40px] font-black my-10 text-secondary">
+          <h1>Master Courses: </h1>
+        </div>
+      </section>
+      <section className="my-10">
+        <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-3 sm:grid sm:grid-2 gap-2 lg:relative lg:left-[100px]">
+          {/* card master game development */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="master-game.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Master game development</h1>
+                  <small className="text-default-500">Price: ${master}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* card master system banking development */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="master-system.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">master system banking</h1>
+                  <small className="text-default-500">Price: ${master}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* card master software archeticture */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="master-archeticture.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">Software archeticture</h1>
+                  <small className="text-default-500">Price: ${master}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+          {/* card systme maintainance development */}
+          <div>
+            <Card>
+              <CardBody>
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src="master-maintainance.jpeg"
+                  width={250}
+                />
+              </CardBody>
+              <CardFooter>
+                <div>
+                  <h1 className="capitalize">System maintainance</h1>
+                  <small className="text-default-500">Price: ${master}</small>
+                  <div className="mt-2">
+                    <Button
+                      size="sm"
+                      as={Link}
+                      target="blank"
+                      href="/card"
+                      className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 relative left-10"
+                      endContent={<BuysIcon />}
+                    >
+                      Buys
+                    </Button>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      </section>
+      <section>
+        <footer className="my-10">
+          <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-row-1 gap-4 ml-[50px] mr-[50px]">
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <h3 className="text-[30px] font-bold my-5 capitalize no-underline">
+                  Partner
+                </h3>
+                <li>
+                  <a href="#">Google</a>
+                </li>
+                <li>
+                  <a href="#">Facebook</a>
+                </li>
+                <li>
+                  <a href="#">Amazone</a>
+                </li>
+                <li>
+                  <a href="#">Youtube</a>
+                </li>
+                <li>
+                  <a href="#">X</a>
+                </li>
+                <li>
+                  <a href="#">Freecodecamp</a>
+                </li>
+              </ul>
+            </div>
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <h3 className="text-[30px] font-bold my-5 capitalize no-underline">
+                  Course Popular
+                </h3>
+                <li>
+                  <a href="#">Python programming</a>
+                </li>
+                <li>
+                  <a href="#">Javascript programming</a>
+                </li>
+                <li>
+                  <a href="#">Java programming</a>
+                </li>
+                <li>
+                  <a href="#">Mobile Application</a>
+                </li>
+                <li>
+                  <a href="#">Javascript Development</a>
+                </li>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+              </ul>
+            </div>
+            <div className="leading-[40px]">
+              <ul className="flex flex-col capitalize underline">
+                <div>
+                  <h3 className="text-[30px] font-bold my-5 capitalize">
+                    Goal Together
+                  </h3>
+                </div>
+                <li>
+                  <a href="#">Develope Artificial Intelligent</a>
+                </li>
+                <li>
+                  <a href="#">Community Developes</a>
+                </li>
+                <li>
+                  <a href="#">Campanies Partner</a>
+                </li>
+                <li>
+                  <a href="#">Learning Resources</a>
+                </li>
+                <li>
+                  <a href="#">Blog Technologies</a>
+                </li>
+                <li>
+                  <a href="#">Safety and security</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <hr />
       </section>
     </DefaultLayout>
   );
