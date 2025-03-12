@@ -230,7 +230,9 @@ export default function IndexPage() {
           <div className="w-[700px] lg:relative lg:top-[100px] md:left-[50px]">
             <h1 className="lg:text-[40px] font-bold ">Benefite Of</h1>
             <h1 className="lg:text-[40px] text-success font-bold">Course</h1>
-            <p className="w-[400px] mt-10 text-white">{paragraph}</p>
+            <p className="w-[400px] mt-10 text-white leading-[40px]">
+              {paragraph}
+            </p>
             <Button
               showAnchorIcon
               as={Link}
@@ -258,7 +260,9 @@ export default function IndexPage() {
             <h1 className="lg:text-[40px] font-bold text-warning">
               Behind The strategy
             </h1>
-            <p className="w-[400px] mt-10 text-white">{strategy}</p>
+            <p className="w-[400px] mt-10 text-white leading-[40px]">
+              {strategy}
+            </p>
             <Button
               showAnchorIcon
               as={Link}
