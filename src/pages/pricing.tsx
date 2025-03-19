@@ -45,9 +45,9 @@ export default function DocsPage() {
   const [value, setValue] = React.useState(0);
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setValue((v) => (v >= 100 ? 0 : v + 10));
-    }, 5000);
-    return () => clearInterval(interval);
+      setValue((v) => (v == 100)? v = 0: v + 20);
+      return () => clearInterval(interval);
+    }, 500000)
   }, []);
   const beginner: number = 14.99;
   const advance: number = 19.99;

@@ -252,7 +252,7 @@ export default function IndexPage() {
         </div>
       </section>
       <section className="bg-[url(/bg-im-1.jpeg)] bg-no-repeat bg-center bg-cover lg:h-[630px] sm:h-[500px]">
-        <div className="mb-20 mt-10 lg:flex lg:flex-row lg:justify-around lg:items-center md:flex-cols sm:flex-cols">
+        <div className="my-10 mt-10 lg:flex lg:flex-row lg:justify-center md:justify-center sm:justify-center lg:items-center md:flex-cols sm:flex-cols">
           <div className="w-[400px] relative top-[100px]">
             {/* No contents in this page */}
           </div>
@@ -271,6 +271,7 @@ export default function IndexPage() {
               color="primary"
               variant="solid"
               className="mt-10"
+              radius="full"
             >
               Expore More
             </Button>
