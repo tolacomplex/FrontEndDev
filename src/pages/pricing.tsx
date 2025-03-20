@@ -6,6 +6,7 @@ import { Chip } from "@heroui/chip";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { Image } from "@heroui/image";
+import { motion } from "framer-motion";
 // svg icon card shopping
 //  for button buys
 export const BuysIcon = ({
@@ -39,15 +40,15 @@ export const BuysIcon = ({
     </svg>
   );
 };
-// main page whole of page 
-// incluce all of page 
+// main page whole of page
+// incluce all of page
 export default function DocsPage() {
   const [value, setValue] = React.useState(0);
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setValue((v) => (v == 100)? v = 0: v + 20);
+      setValue((v) => (v == 100 ? (v = 0) : v + 20));
       return () => clearInterval(interval);
-    }, 500000)
+    }, 500000);
   }, []);
   const beginner: number = 14.99;
   const advance: number = 19.99;
@@ -115,7 +116,11 @@ export default function DocsPage() {
       {/* section display course of page  */}
       <section className="my-4">
         <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-2 sm:grid sm:grid-1 gap-2">
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -145,8 +150,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -175,8 +184,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -205,8 +218,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -235,8 +252,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -265,8 +286,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -295,8 +320,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -325,8 +354,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -355,8 +388,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -385,8 +422,12 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -415,7 +456,7 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
         </div>
       </section>
       {/* Advance course display out put user interface */}
@@ -429,7 +470,11 @@ export default function DocsPage() {
       {/* Try your advance course of user choice */}
       <section className="my-10">
         <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-2 sm:grid sm:grid-1 gap-2">
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -458,9 +503,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card frontend developer tool */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -489,9 +538,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card page back end development tool */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -520,9 +573,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card page react js development */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -551,9 +608,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card Full Stuck development application */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -582,9 +643,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/*Card  Data science page development*/}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -613,9 +678,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card page machine learning development */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -644,9 +713,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card page mobile development */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -675,9 +748,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card desktop application development */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -706,9 +783,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* Card ethicle hacking page development*/}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -737,7 +818,7 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
         </div>
       </section>
       {/* Master course display out put user interface */}
@@ -751,7 +832,11 @@ export default function DocsPage() {
       <section className="my-10">
         <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-3 sm:grid sm:grid-2 gap-2 lg:relative lg:left-[100px]">
           {/* card master game development */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -780,9 +865,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* card master system banking development */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -811,9 +900,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* card master software archeticture */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -842,9 +935,13 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
           {/* card systme maintainance development */}
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
             <Card>
               <CardBody>
                 <Image
@@ -873,7 +970,7 @@ export default function DocsPage() {
                 </div>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section>
