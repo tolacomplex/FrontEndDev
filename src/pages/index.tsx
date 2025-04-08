@@ -5,6 +5,7 @@ import { Accordion, AccordionItem } from "@heroui/accordion";
 import { Alert } from "@heroui/alert";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
+import { motion } from "framer-motion";
 export default function IndexPage() {
   const student: string =
     "You would like exporing about involve of techonology development and learn start from zero or beginer course that we recomment. The next you have opportunity learn and work anywhere if you complete this course in 4-5 months.";
@@ -27,13 +28,13 @@ export default function IndexPage() {
             </h1>
             <Accordion variant="bordered">
               <AccordionItem key="student" aria-label="student" title="Student">
-                {student}
+                <div className="text-center text-[18px]">{student}</div>
                 <div className="w-[200px] h-[200px] lg:relative lg:left-[100px] my-5">
                   <Image alt="Image" src="st-im-1.jpeg" />
                 </div>
               </AccordionItem>
               <AccordionItem key="worker" aria-label="worker" title="Worker">
-                {Worker}
+                <div className="text-center text-[18px]">{Worker}</div>
                 <div className="w-[200px] h-[200px] lg:relative lg:left-[100px] my-5">
                   <Image alt="Image" src="st-im-2.jpeg" />
                 </div>
@@ -43,7 +44,7 @@ export default function IndexPage() {
                 aria-label="professional"
                 title="Professional"
               >
-                {professional}
+                <div className="text-center text-[18px]">{professional}</div>
                 <div className="w-[200px] h-[200px] lg:relative lg:left-[100px] my-5">
                   <Image alt="Image" src="st-im-3.jpeg" />
                 </div>
@@ -67,14 +68,18 @@ export default function IndexPage() {
       </section>
       <section className="my-10">
         <div className="lg:grid lg:grid-cols-4 lg:gap-9 sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 mt-10">
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Frontend Developer
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="it-pro-1.jpeg" />
               </CardBody>
               <CardFooter>
@@ -85,15 +90,19 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Backend Developer
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="it-pro-2.jpeg" />
               </CardBody>
               <CardFooter>
@@ -104,15 +113,19 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Binary Computer
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="it-pro-3.jpeg" />
               </CardBody>
               <CardFooter>
@@ -124,15 +137,19 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Cybersecurity
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="it-pro-4.jpeg" />
               </CardBody>
               <CardFooter>
@@ -144,15 +161,19 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Data Science
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="dev-im-1.jpeg" />
               </CardBody>
               <CardFooter>
@@ -164,15 +185,19 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Cloud Computing
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="dev-im-4.jpeg" />
               </CardBody>
               <CardFooter>
@@ -183,15 +208,19 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Computer Science
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="dev-im-2.jpeg" />
               </CardBody>
               <CardFooter>
@@ -203,15 +232,19 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onHoverStart={() => console.log("Hover started")}
+          >
             <Card>
               <CardHeader>
                 <h3 className="text-[20px] text-sky-400 relative left-5 uppercase">
                   Software Development
                 </h3>
               </CardHeader>
-              <CardBody>
+              <CardBody as={Link} href="#">
                 <Image alt="Programmer" src="dev-im-5.jpeg" />
               </CardBody>
               <CardFooter>
@@ -222,7 +255,7 @@ export default function IndexPage() {
                 </p>
               </CardFooter>
             </Card>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="bg-[url(/bg-im-2.jpeg)] bg-no-repeat bg-center bg-cover lg:h-[630px] sm:h-[500px]">

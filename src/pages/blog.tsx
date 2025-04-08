@@ -79,13 +79,13 @@ export default function DocsPage() {
   let type_two: string = `Reference users are the user types for general, non-person-related users, enabling more accurate assignments for additional identical authorizations, such as Internet users created with the SU01 code.Dec 22, 2023.`;
   return (
     <DefaultLayout>
-      <section>
+      <section className="mt-[40px]">
         <div className="lg:w-[700px] md:w-[400px] lg:relative lg:left-[200px] md:relative md:left-[100px]">
-          <div className="flex flex-col gap-6 items-center">
+          <div className="flex flex-col gap-10 items-center">
             <h1 className="font-bold text-[40px] capitalize text-success">
               Build Your Experiences
             </h1>
-            <p className="leading-8">{type_one}</p>
+            <p className="leading-8 text-center text-[18px]">{type_one}</p>
             <div className="flex flex-row gap-4">
               <Button
                 key="button"
@@ -109,7 +109,7 @@ export default function DocsPage() {
                 Get Started
               </Button>
             </div>
-            <div className="relative -left-[40px]">
+            <div className="relative left-[10px]">
               <AvatarGroup className="w-[150px]" total={1}>
                 <Avatar />
                 <Avatar />
@@ -121,7 +121,7 @@ export default function DocsPage() {
         </div>
       </section>
       <section>
-        <div className="lg:grid lg:grid-cols-3 lg:m-[100px] gap-5 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1">
+        <div className="lg:grid lg:grid-cols-3 lg:m-[100px] lg:gap-5 md:grid md:grid-cols-2 md:gap-3 sm:grid sm:grid-cols-1 sm:gap-3">
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
@@ -394,17 +394,22 @@ export default function DocsPage() {
         </div>
       </section>
       <section className="mt-[100px] mb-[150px]">
-        <motion.div className="flex flex-col justify-center items-center gap-20">
+        <div className="flex flex-col gap-5 items-center">
           <div>
-            <h1 className="capitalize font-black text-primary text-[40px]">
+            <h1 className="capitalize font-black text-primary text-[40px] text-center">
               Our Partner
             </h1>
-            <small className="capitalize text-default-400 text-[20px] font-bold">
+            <small className="capitalize text-default-400 text-[20px] font-bold text-center mb-10">
               list company
             </small>
           </div>
-          <div className="grid grid-cols-8 lg:gap-9 md:gap-5">
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+
+          <motion.div
+            animate={{ x: 100 }}
+            transition={{ type: "spring" }}
+            className="grid grid-cols-8 lg:gap-9 md:gap-5"
+          >
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} >
               <Image
                 alt="google"
                 width={80}
@@ -469,17 +474,17 @@ export default function DocsPage() {
                 src="https://rock-the-prototype.com/wp-content/uploads/2022/01/github-repositories-1.jpg"
               />
             </motion.div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </section>
-      <section>
+      <section className="mb-[100px]">
         <div className="flex flex-col justify-center items-center gap-10">
           <div>
             <h1 className="text-[40px] font-black capitaize text-primary ">
               Referrence of us
             </h1>
           </div>
-          <div className="leading-10 lg:w-[700px]">
+          <div className="leading-10 lg:w-[700px] text-center text-[20px]">
             <p>{type_two}</p>
           </div>
           <div className="flex flex-row gap-5 text-white">

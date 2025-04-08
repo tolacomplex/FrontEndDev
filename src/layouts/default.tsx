@@ -12,8 +12,8 @@ export default function DefaultLayout({
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
-        <span className="text-default-600">©{new Date().getFullYear()}</span>
-        <p className="text-secondary">Copyright by Tola Developers</p>
+        <span className="text-success mr-2">©{new Date().getFullYear()}</span>
+        <p className="text-primary">Copyright by Tola Developers</p>
       </footer>
     </div>
   );

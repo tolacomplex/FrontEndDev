@@ -46,13 +46,13 @@ export default function DocsPage() {
   const [value, setValue] = React.useState(0);
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setValue((v) => (v == 100 ? (v = 0) : v + 20));
+      setValue((v) => (v == 100 ? (v = 0) : v + 10));
       return () => clearInterval(interval);
-    }, 500000);
+    }, 5000);
   }, []);
-  const beginner: number = 14.99;
-  const advance: number = 19.99;
-  const master: number = 49.99;
+  const beginner: number = 69.99;
+  const advance: number = 249.99;
+  const master: number = 799.99;
   const speed_text: string =
     "The speed with which data is getting transmitted in computer is called data transmission speed. It is commonly measured in bits per second. To be more specific, it is measured in megabits (million bits) per second which is usually abbreviated as Mbps";
   return (
@@ -71,7 +71,7 @@ export default function DocsPage() {
               variant="bordered"
               className="bg-gradient-to-tr from-sky-400 to-fuchsia-500 mt-3 "
             >
-              Get Start
+              Get Started
             </Button>
           </div>
           <div>
