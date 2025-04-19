@@ -50,9 +50,9 @@ export default function DocsPage() {
       return () => clearInterval(interval);
     }, 5000);
   }, []);
-  const beginner: number = 69.99;
-  const advance: number = 249.99;
-  const master: number = 799.99;
+  const beginner: number = 49.99;
+  const advance: number = 199.99;
+  const master: number = 599.99;
   const speed_text: string =
     "The speed with which data is getting transmitted in computer is called data transmission speed. It is commonly measured in bits per second. To be more specific, it is measured in megabits (million bits) per second which is usually abbreviated as Mbps";
   return (

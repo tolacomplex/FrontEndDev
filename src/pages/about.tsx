@@ -67,6 +67,7 @@ export default function DocsPage() {
           </div>
         </div>
       </section>
+      {/* First Video display screen */}
       <section className="mt-[130px] mb-[100px]">
         <div className="ml-6 mr-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:max-w-[80rem] md:flex md:flex-col md:justify-center md:items-center md:max-w-[68rem] sm:flex sm:flex-col sm:justify-center sm:items-center sm:max-w-[48rem] gap-5">
           <div>
@@ -95,6 +96,41 @@ export default function DocsPage() {
                 muted
               >
                 <source src="baby.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Second video display screen */}
+      {/* about product review items  */}
+      <section className="mt-[130px] mb-[200px]">
+        <div className="ml-6 mr-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:max-w-[80rem] md:flex md:flex-col md:justify-center md:items-center md:max-w-[68rem] sm:flex sm:flex-col sm:justify-center sm:items-center sm:max-w-[48rem] gap-5">
+          <div>
+            <h1 className="capitalize font-bold text-[50px] text-primary">
+              Product Reviews
+            </h1>
+          </div>
+          <div className="lg:flex lg:flex-row lg:w-[800px] md:flex md:flex-row md:w-[700px] sm:flex sm:flex-row sm:w-[600px] flex flex-col gap-6 w-[300px] items-center">
+            <div>
+              <video
+                className="border-1 border-gray-300 dark:border-gray-700 shadow-lg rounded-lg"
+                playsInline
+                muted
+                autoPlay
+                loop
+              >
+                <source src="product-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div>
+              <video
+                className="border-1 border-gray-300 dark:border-gray-700 shadow-lg rounded-lg"
+                autoPlay
+                playsInline
+                loop
+                muted
+              >
+                <source src="product-1.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -149,7 +185,7 @@ export default function DocsPage() {
       </section>
       <hr />
       {/* prepare Image to circle  */}
-      <section className="my-[200px]">
+      <section className="my-[100px] bg-gradient-to-tr from-cyan-500 to-blue-500 hover:bg-gradient-to-tr hover:from-sky-500 hover:to-indigo-500 border-2 bg-clip-content p-2">
         <div className="lg:flex lg:flex-row lg:justify-center lg:items-center md:flex md:flex-row md:justify-center md:items-center gap-5 sm:flex sm:flex-row sm:justify-center sm:items-center flex flex-row justify-center items-center mt-[100px] mb-[100px] lg:w-[1200px]">
           {/* Image of one */}
           <div className="lg:w-[200px] md:w-[200px] sm:w-[200px] w-[100px] border-1 border-gray-300 dark:border-gray-700 showdow-lg rounded-2xl lg:relative lg:top-[180px] lg:left-[240px] md:relative md:top-[140px] md:left-[180px] sm:relative sm:top-[90px] sm:left-[140px] relative top-[60px] left-[100px]">
@@ -185,7 +221,7 @@ export default function DocsPage() {
       <section className="my-10">
         {/* Form submit feedback of user */}
         <div>
-          <div className="lg:w-[400px] rounded-lg md:w-[400px] sm:w-[400px] w-[300px] ">
+          <div className="lg:w-[400px] rounded-lg md:w-[400px] sm:w-[400px] w-[300px]">
             <Card>
               <CardHeader>
                 <h1 className="mt-4 lg:text-[30px] lg:font-bold md:text-[30px] md:font-bold sm:text-[30px] sm:font-bold ml-10 text-[30px] text-secondary">
@@ -197,7 +233,7 @@ export default function DocsPage() {
                   <Form>
                     <Input label="User Name" name="username" />
                     <Input label="Email" name="email" />
-                    <Textarea label="Description" name="description" />
+                    <Textarea label="Problems" name="description" />
                     <Button
                       className="bg-gradient-to-tr from-green-400 to-purple-400 relative left-[100px] my-10 max-w-lg"
                       type="submit"

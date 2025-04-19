@@ -6,7 +6,6 @@ import PricingPage from "@/pages/pricing";
 import BlogPage from "@/pages/blog";
 import AboutPage from "@/pages/about";
 import Card from "@/pages/card"
-
 function App() {
   return (
     <Routes>
