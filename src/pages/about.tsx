@@ -106,7 +106,7 @@ export default function DocsPage() {
       <section className="mt-[130px] mb-[200px]">
         <div className="ml-6 mr-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:max-w-[80rem] md:flex md:flex-col md:justify-center md:items-center md:max-w-[68rem] sm:flex sm:flex-col sm:justify-center sm:items-center sm:max-w-[48rem] gap-5">
           <div>
-            <h1 className="capitalize font-bold text-[50px] text-primary">
+            <h1 className="capitalize font-bold text-[50px] text-primary relative top-[-50px]">
               Product Reviews
             </h1>
           </div>
@@ -130,7 +130,7 @@ export default function DocsPage() {
                 loop
                 muted
               >
-                <source src="product-1.mp4" type="video/mp4" />
+                <source src="product-2.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
